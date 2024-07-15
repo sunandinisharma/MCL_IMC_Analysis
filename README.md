@@ -15,7 +15,8 @@ Directory Structure
 # Setup and Installation
 
 ## Step 1: Python Environment Setup
-Create a new Python environment. Run in the linux Terminal
+Create a new Python environment in the Linux terminal using the follwoing command
+
 python -m venv imc_env
 source imc_env/bin/activate  # On Windows use `imc_env\Scripts\activate`
 
