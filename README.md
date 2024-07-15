@@ -1,4 +1,4 @@
-# MCL_IMC_Analysis
+# MCL Imaging Mass Cytometry Analysis
 This repository contains all the necessary components and instructions to replicate the entire IMC analysis. Below is a detailed guide on how to set up and run the analysis pipeline, including installing dependencies and understanding the structure of the provided files and directories.
 
 ## Directory Structure
