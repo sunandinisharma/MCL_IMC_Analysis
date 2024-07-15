@@ -1,7 +1,7 @@
 # MCL_IMC_Analysis
 This repository contains all the necessary components and instructions to replicate the entire IMC analysis. Below is a detailed guide on how to set up and run the analysis pipeline, including installing dependencies and understanding the structure of the provided files and directories.
 
-Directory Structure
+## Directory Structure
 
 - raw .txt files: Raw data files used as input for the analysis.
 - .tiff segmentations: Segmented images used in the analysis. Note that these segmentations are included because they are not directly reproducible due to minor updates in the Mesmer package.
@@ -21,13 +21,13 @@ Create a new Python environment in the Linux terminal using the follwoing comman
 - source imc_env/bin/activate  # On Windows use `imc_env\Scripts\activate`
 
 ### Install the required Python packages:
-pip install --no-deps -r requirements.txt
+- pip install --no-deps -r requirements.txt
 
 ### Install the fastcluster package:
-pip install fastcluster-1.2.6-cp38-cp38-win_amd64.whl
+- pip install fastcluster-1.2.6-cp38-cp38-win_amd64.whl
 
 ## Step 2: Running the Analysis
-Open the provided Jupyter Notebook A00 - MCL Analysis-checkpoint.ipynb in your preferred environment (e.g., JupyterLab, Jupyter Notebook). Follow the steps documented in the notebook to run the analysis. The notebook provides detailed instructions on generating diagnostic figures and obtaining batch-corrected data.
+Open the provided Jupyter Notebook A00 - MCL Analysis-checkpoint.ipynb in your preferred environment (Jupyter Notebook). Follow the steps documented in the notebook to run the analysis. The notebook provides detailed instructions on generating diagnostic figures and obtaining batch-corrected data.
 
 ## Step 3: Running Cycombine for Batch Normalisation in R
 Having all the necessary inputs for CyCombine, we will use RStudio to run the script "cycombine_batches.R" inside the "batchnorm" directory. This will correct expression between batches and output diagnostic figures and the corrected dataset as an RDS archive, which we will re-import below.
