@@ -32,8 +32,6 @@ Create a new Python environment in the Linux terminal using the follwoing comman
   
 ### Install the required Python packages:
 - pip install --no-deps -r requirements.txt
-
-### Install the fastcluster package:
 - pip install fastcluster-1.2.6-cp38-cp38-win_amd64.whl
 
 ## Step 2: Running the Analysis 
