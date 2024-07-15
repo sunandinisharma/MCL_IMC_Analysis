@@ -3,7 +3,7 @@ This repository contains all the necessary components and instructions to replic
 
 # Note
 Due to the large size of the IMC data, if you are interested to get reanalyse the data, please email me at: sunandini.sharma@unmc.edu
-You can also use the CodeOcean capsule ... to run this complete analysis.
+The codeocean capsule will be also released during time of publication.
 
 # Pipeline Overview
 - For this project, we generated a Tissue Microarray (TMA) for Mantle Cell Lymphoma samples and ablated them using the Hyperion™ system. Regions of interest (ROIs) were generated as .txt files for each sample (1-3 ROIs per sample). After segmentation, we produced raw single-cell expression and nearest-neighbor datasets.
