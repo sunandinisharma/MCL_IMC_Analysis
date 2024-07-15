@@ -2,7 +2,7 @@
 This repository contains all the necessary components and instructions to replicate the entire IMC analysis. Below is a detailed guide on how to set up and run the analysis pipeline, including installing dependencies and understanding the structure of the provided files and directories.
 
 # Note
-Due to the large size of the IMC data, if you are interested to get reanalyse the data, please email me at: sunandini.sharma@unmc.edu
+Due to the large size of the IMC data, if you are interested to reanalyse the data, please email me at: sunandini.sharma@unmc.edu
 The codeocean capsule will be also released during time of publication.
 
 # Pipeline Overview
