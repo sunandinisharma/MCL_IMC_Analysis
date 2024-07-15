@@ -1,6 +1,16 @@
 # MCL Imaging Mass Cytometry Analysis (IMC)
 This repository contains all the necessary components and instructions to replicate the entire IMC analysis. Below is a detailed guide on how to set up and run the analysis pipeline, including installing dependencies and understanding the structure of the provided files and directories.
 
+# Pipeline Overview
+- For this project, we generated a Tissue Microarray (TMA) for Mantle Cell Lymphoma samples and ablated them using the Hyperion™ system. Regions of interest (ROIs) were generated as .txt files for each sample (1-3 ROIs per sample). After segmentation, we produced raw single-cell expression and nearest-neighbor datasets.
+
+- The single-cell data for all markers was normalized using elbow detection to threshold outliers, compressing them with a hyperbolic tangent function. Batch normalization was then performed using the CyCombine R package to harmonize data from different TMAs. Data harmonization was visualized using Uniform Manifold Approximation and Projection (UMAP).
+
+- We conducted a two-stage clustering: hierarchical clustering within samples to a high-resolution set of clusters, followed by Leiden clustering of the hierarchical clusters to phenotype single cells using markers like CD20, CD5, CCND1, SOX11, CD45, CD3, CD4, CD8, FOXP3, CD14, CD11b, CD68, CD163, CD11c, and CD31. Expert reviews annotated these phenotypes, stored in "cluster_phenotype_calling.xlsx", and linked to the expression data frame.
+
+- Finally, we quantified cell interactions by assigning an additive proximity score based on the distance from a cell to all cells of a given phenotype within a defined pixel radius. Neighborhood profiles were generated at 25 and 50 microns, providing an interaction score for each cell.
+
+
 ## Directory Structure
 
 - raw .txt files: Raw data files used as input for the analysis.
