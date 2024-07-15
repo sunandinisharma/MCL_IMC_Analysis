@@ -18,7 +18,8 @@ This repository contains all the necessary components and instructions to replic
 Create a new Python environment in the Linux terminal using the follwoing command
 
 - python -m venv imc_env
-- source imc_env/bin/activate  # On Windows use `imc_env\Scripts\activate`
+- source imc_env/bin/activate
+- # On Windows use `imc_env\Scripts\activate`
 
 ### Install the required Python packages:
 - pip install --no-deps -r requirements.txt
@@ -26,7 +27,7 @@ Create a new Python environment in the Linux terminal using the follwoing comman
 ### Install the fastcluster package:
 - pip install fastcluster-1.2.6-cp38-cp38-win_amd64.whl
 
-## Step 2: Running the Analysis
+## Step 2: Running the Analysis 
 Open the provided Jupyter Notebook A00 - MCL Analysis-checkpoint.ipynb in your preferred environment (Jupyter Notebook). Follow the steps documented in the notebook to run the analysis. The notebook provides detailed instructions on generating diagnostic figures and obtaining batch-corrected data.
 
 ## Step 3: Running Cycombine for Batch Normalisation in R
